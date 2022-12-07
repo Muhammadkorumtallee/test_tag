@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: butlerlogic/action-autotag@stable
+    - uses: simpleactions/create-tag@v1.0.0
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
