@@ -1,15 +1,15 @@
-name: Create Tag
-
+name: 'tag'
 on:
   push:
     branches:
       - main
-
 jobs:
-  build:
+  tag:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: simpleactions/create-tag@v1.0.0
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: 'Checkout'
+        uses: actions/checkout@v2.4.0
+      - name: 'Tag'
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
