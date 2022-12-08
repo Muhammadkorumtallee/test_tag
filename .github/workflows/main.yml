@@ -17,4 +17,5 @@ jobs:
           MAJOR_STRING_TOKEN: true
           MINOR_STRING_TOKEN: true
           PATCH_STRING_TOKEN: true
+          WITH_V: true
           
