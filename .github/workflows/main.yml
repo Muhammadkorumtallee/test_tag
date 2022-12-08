@@ -13,6 +13,8 @@ jobs:
         uses: anothrNick/github-tag-action@1.36.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: none
           MAJOR_STRING_TOKEN: true
           MINOR_STRING_TOKEN: true
+          PATCH_STRING_TOKEN: true
           
